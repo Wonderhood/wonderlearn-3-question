@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <audio id="CorrectS" src="Sources/correctSound.mp3" preload="auto"></audio>
+    <audio id="WrongS" src="Sources/wrongSound.mp3" preload="auto"></audio>
+
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+
+            
+
+            <div class="Qdiv">
+            <audio id="Qsound" src="Sources/dummy.mp3" preload="auto"></audio>
+            <button class="playbtn" onclick="document.getElementById('Qsound').play();"> <img src="Sources/play.png"></button>
+            &nbsp &nbsp  &nbsp  &nbsp
+            <h1 id="question" class="questionC">What is the answer to this question</h1>
+            </div>
+            <br><br>
+
+            <table>
+               
+                <tr>
+                  <td>
+                      <div class="choice-container">
+                    <img src="Sources/dummy.png" class="choice-img"  data-number="1">
+                   <div class= "correct"> <img src="Sources/correct.png"> </div>
+                   <div class= "incorrect"> <img src="Sources/wrong.png"></div>
+                </div>
+            </td>
+                  <td>
+                    <div class="choice-container">
+                        <img src="Sources/dummy.png" class="choice-img"  data-number="2">
+                        <div class= "correct"> <img src="Sources/correct.png"> </div>
+                   <div class= "incorrect"> <img src="Sources/wrong.png"></div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="choice-container">
+                        <img src="Sources/dummy.png" class="choice-img"  data-number="3">
+                        <div class= "correct"> <img src="Sources/correct.png"> </div>
+                   <div class= "incorrect"> <img src="Sources/wrong.png"></div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              <br><br><br><br><br>
+              <div class="submit-container">
+                <p class="Submit-text" data-number="1">Submit</p>
+            </div>    
+            
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

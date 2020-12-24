@@ -1,0 +1,127 @@
+body {
+    color: #fff;
+    background-image: url("Sources/background.jpg");
+}
+
+.choice-container {
+    position:relative;
+    display:inline-block;
+    margin-bottom: 0.8rem;
+    width: 120px;
+    height:120px;
+    border-radius: 4px;
+    background: rgb(18, 93, 255);
+    font-size: 3rem;
+}
+
+.choice-containerSel {
+    position:relative;
+    display:inline-block;
+    margin-bottom: 0.8rem;
+    width: 120px;
+    height:120px;
+    border-radius: 4px;
+    background: rgb(18, 93, 255);
+    font-size: 3rem;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(241, 255, 42, 1);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.submit-container {
+    margin-top: 10;
+    margin-bottom: 3rem;
+    width: 150px;
+    border-radius: 4px;
+    background: rgb(18, 93, 255);
+    font-size: 7rem;
+}
+
+.submit-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.Qdiv{
+    display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.questionC{
+    margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.playbtn{
+    text-align: center;
+    height:60px;
+    width:55px;
+}
+
+.correct {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+.incorrect {
+    display:none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+
+  }
+
+/* Heads up Display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11,223,36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11,223,36);
+    width: 0%;
+}
