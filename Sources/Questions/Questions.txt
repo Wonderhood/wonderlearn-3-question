@@ -1,2 +1,5 @@
-What is green? 2
-What is purple? 1
+Pick the Color Green 2 
+Pick the Color Yellow 1
+Which of these rhyme with Bin? 3
+Find the Missing Number 4
+Which one of these is a Triangle? 5
